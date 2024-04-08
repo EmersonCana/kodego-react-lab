@@ -1,16 +1,18 @@
-# Create a React Application
+# Exercise: Passing Props in React
 
 ## Objective
 
-Our goal is for us to be able to create a React Project with ease, and understand the process of creating a React Application.
+To practice passing props from a parent component to a child component in React.
 
-## Instruction
+## Instructions
 
-- Create a folder where you will place all your react projects
-- Inside that folder create a basic react application
-- Make sure to use Vite to create your react project
-- Render a basic Hello World application
+1. Use Vite to create a new ReactJS application.
+2. Inside the application directory > src, create a folder named `components`.
+3. Inside the `components` folder, create two components:
+   - **ParentComponent.jsx**: This component will contain a state variable called `message` with the value `"Hello, world!"`. Render a `ChildComponent` inside `ParentComponent` and pass the `message` as a prop to it.
+   - **ChildComponent.jsx**: This component will receive a prop called `message` and render it inside a `<p>` tag.
+4. In `App.js`, import and use the `ParentComponent`.
 
-## Expected output
+## Challenge
 
-- A basic Hello World screen using ReactJs
+Modify the `ChildComponent` to render the `message` prop conditionally. If the `message` prop is `"Hello, world!"`, render it inside a `<p>` tag with a class of `greeting`. If it's any other message, render it inside a `<p>` tag with a class of `default-message`.
